@@ -20,6 +20,8 @@ def all_products():
     return jsonify({"products": products})
 
 
+@app.route('/sear')
+
 @app.route('/add_product', methods=['POST'])
 def add_product():
     data = request.get_json()

@@ -180,6 +180,9 @@ function updateProductsList(products) {
     }
 }
 
+
+
+
 async function deleteFromCart(event) {
   const productId = event.target.dataset.productId;
 

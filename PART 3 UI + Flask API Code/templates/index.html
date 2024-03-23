@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Store</title>
+    <title>E-Commerce Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <h1>E-Commerce Application</h1>
+   
+    
     <form id="product-form">
         <label for="name">Product Name:</label>
         <input type="text" id="name" name="name" required>
@@ -25,6 +27,7 @@
         </li>
         {% endfor %}
     </ul>
+    
     <button id="view-cart-btn">View Cart</button>
     <ul id="cart-list" style="display: none;"></ul>
     <p id="total-amount" style="display: none;"></p>
