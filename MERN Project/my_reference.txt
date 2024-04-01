@@ -1,0 +1,12 @@
+MongoDB: MongoDB is a NoSQL database that stores data in a flexible, JSON-like format. It's known for its scalability and flexibility, making it a popular choice for modern web applications.
+
+Express.js: Express.js is a web application framework for Node.js. It provides a set of features for building web servers and APIs, making it easier to handle requests, routes, and middleware.
+
+React: React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components that update efficiently when data changes. React is commonly used for building the frontend (client-side) of web applications.
+
+Node.js: Node.js is a JavaScript runtime environment that allows you to run JavaScript code on the server-side. It's built on Chrome's V8 JavaScript engine and provides a set of libraries for building server-side applications.
+
+
+
+
+utils - Folder is used to handle all type of errors in Backend 
