@@ -7,11 +7,6 @@ products = [
     {"id": 1, "name": "Product 1", "price": 10, "description": "Description 1"},
     {"id": 2, "name": "Product 2", "price": 20, "description": "Description 2"},
     {"id": 3, "name": "Product 3", "price": 30, "description": "Description 3"},
-    {"id": 4, "name": "Product 4", "price": 30, "description": "Description 4"},
-    {"id": 5, "name": "Product 5", "price": 30, "description": "Description 5"},
-    {"id": 6, "name": "Product 6", "price": 30, "description": "Description 6"},
-    {"id": 7, "name": "Product 7", "price": 30, "description": "Description 8"},
-    {"id": 8, "name": "Product 8", "price": 30, "description": "Description 9"},
 ]
 
 cart = {}
@@ -25,6 +20,22 @@ def all_products():
     return jsonify({"products": products})
 
 
+@app.route('/sear')
+
+@app.route('/add_product', methods=['POST'])
+def add_product():
+    data = request.get_json()
+    if not data:
+        return jsonify({'error': 'Invalid JSON data'}), 400
+
+    new_product = {
+        'id': len(products) + 1,
+        'name': data.get('name'),
+        'price': data.get('price'),
+        'description': data.get('description')
+    }
+    products.append(new_product)
+    return jsonify(new_product), 201
 
 @app.route('/cart', methods=['GET'])
 def view_cart():

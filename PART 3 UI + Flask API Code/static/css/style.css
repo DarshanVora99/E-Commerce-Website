@@ -1,7 +1,6 @@
 /* style.css */
 body {
     font-family: Arial, sans-serif;
-    
 }
 
 h2 {
@@ -19,4 +18,8 @@ h2 {
 
 #cart-list {
     margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px; /* Adjust margin for card items */
 }
