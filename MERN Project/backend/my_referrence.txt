@@ -1,4 +1,0 @@
-// In this Tutorial We are going to create REST API using Nodejs and MongoDB 
-// We are going to perform CURD Operations 
-npm i body-parser 
-npm i express nodemon mongoose 
